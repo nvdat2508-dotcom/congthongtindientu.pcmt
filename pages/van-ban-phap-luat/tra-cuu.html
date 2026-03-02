@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cổng thông tin điện tử về Phòng chống Ma túy">
+    <meta name="keywords" content="Phòng chống ma túy, ma túy, pháp luật, hỗ trợ, giáo dục">
+    <meta name="author" content="Nguyễn Văn Đạt - NCKH2526">
+    <title>TRA CỨU</title>
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-banner">
+            <img src="../../favicon.ico" alt="logo" class="header-banner-logo">
+            <div class="header-banner-name">
+                <h1>Cổng thông tin điện tử về phòng chống ma túy</h1>
+                <p>Thực hiện pháp luật về phòng, chống ma túy tại địa bàn Thành phố Hồ Chí Minh</p>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-container-menu">
+                <li><a href="../../index.html">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Giới thiệu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/gioi-thieu/chuc-nang-nhiem-vu.html">Chức năng - nhiệm vụ</a></li>
+                        <li><a href="../../pages/gioi-thieu/co-cau-to-chuc.html">Cơ cấu tổ chức</a></li>
+                        <li><a href="../../pages/gioi-thieu/lich-su-hinh-thanh.html">Lịch sử hình thành</a></li>
+                        <li><a href="../../pages/gioi-thieu/so-do-cong-thong-tin.html">Sơ đồ cổng thông tin</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Tin tức - sự kiện
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/tin-tuc/tin-tuc-trong-nuoc.html">Tin tức trong nước</a></li>
+                        <li><a href="../../pages/tin-tuc/tin-tuc-quoc-te.html">Tin tức quốc tế</a></li>
+                        <li><a href="../../pages/tin-tuc/hoat-dong-dia-phuong.html">Hoạt động địa phương</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown active">
+                    <a href="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Văn bản pháp luật
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/van-ban-phap-luat/luat.html">Luật</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/nghi-dinh.html">Nghị định</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/thong-tu.html">Thông tư</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/van-ban-dia-phuong.html">Văn bản địa phương</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/van-ban-chi-dao-dieu-hanh.html">Văn bản chỉ đạo điều hành</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/van-ban-quoc-te.html">Văn bản quốc tế</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/tra-cuu.html" class="active">Tra cứu</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Tuyên truyền - giáo dục
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/kien-thuc-co-ban-ve-ma-tuy.html">Kiến thức cơ bản về ma túy</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/ky-nang-phong-ngua.html">Kỹ năng phòng ngừa</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/nhan-dien-cac-loai-ma-tuy-moi.html">Nhận diện các loại ma túy mới</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/tac-hai-ma-tuy.html">Tác hại ma túy</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/tai-lieu-truyen-thong.html">Tài liệu truyền thông</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/nghien-cuu-trao-doi.html">Nghiên cứu - trao đổi</a></li>
+                <li><a href="../../pages/to-giac-phan-anh.html">Tố giác - phản ánh</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <aside class="sidebar" id="sidebar" aria-hidden="true">
+        <div class="sidebar-container">
+            <div class="sidebar-container-banner">
+                <img src="../../favicon.ico" alt="logo" class="sidebar-container-logo">
+                <div class="sidebar-container-name">
+                    <h1>Cổng thông tin điện tử về phòng chống ma túy</h1>
+                    <p>Thực hiện pháp luật về phòng, chống ma túy<br>tại địa bàn Thành phố Hồ Chí Minh</p>
+                </div>
+                <button class="sidebar-close" id="sidebarClose" aria-label="Đóng menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../../index.html">Trang chủ</a></li>
+                <li class="sidebar-dropdown">
+                    <span>Giới thiệu</span>
+                    <ul>
+                        <li><a href="../../pages/gioi-thieu/chuc-nang-nhiem-vu.html">Chức năng - nhiệm vụ</a></li>
+                        <li><a href="../../pages/gioi-thieu/co-cau-to-chuc.html">Cơ cấu tổ chức</a></li>
+                        <li><a href="../../pages/gioi-thieu/lich-su-hinh-thanh.html">Lịch sử hình thành</a></li>
+                        <li><a href="../../pages/gioi-thieu/so-do-cong-thong-tin.html">Sơ đồ cổng thông tin</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-dropdown">
+                    <span>Tin tức - sự kiện</span>
+                    <ul>
+                        <li><a href="../../pages/tin-tuc/tin-tuc-trong-nuoc.html">Tin tức trong nước</a></li>
+                        <li><a href="../../pages/tin-tuc/tin-tuc-quoc-te.html">Tin tức quốc tế</a></li>
+                        <li><a href="../../pages/tin-tuc/hoat-dong-dia-phuong.html">Hoạt động địa phương</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-dropdown active">
+                    <span>Văn bản pháp luật</span>
+                    <ul>
+                        <li><a href="../../pages/van-ban-phap-luat/luat.html">Luật</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/nghi-dinh.html">Nghị định</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/thong-tu.html">Thông tư</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/van-ban-dia-phuong.html">Văn bản địa phương</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/van-ban-chi-dao-dieu-hanh.html">Văn bản chỉ đạo điều hành</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/van-ban-quoc-te.html">Văn bản quốc tế</a></li>
+                        <li><a href="../../pages/van-ban-phap-luat/tra-cuu.html" class="active">Tra cứu</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-dropdown">
+                    <span>Tuyên truyền - giáo dục</span>
+                    <ul>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/kien-thuc-co-ban-ve-ma-tuy.html">Kiến thức cơ bản về ma túy</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/ky-nang-phong-ngua.html">Kỹ năng phòng ngừa</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/nhan-dien-cac-loai-ma-tuy-moi.html">Nhận diện các loại ma túy mới</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/tac-hai-ma-tuy.html">Tác hại ma túy</a></li>
+                        <li><a href="../../pages/tuyen-truyen-giao-duc/tai-lieu-truyen-thong.html">Tài liệu truyền thông</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/nghien-cuu-trao-doi.html">Nghiên cứu - trao đổi</a></li>
+                <li><a href="../../pages/to-giac-phan-anh.html">Tố giác - phản ánh</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="main-content" id="main">
+        <div class="tracuu-container-banner">
+            <div class="tracuu-container-main">
+                <h1>HỆ THỐNG TRA CỨU VĂN BẢN</h1>
+                <form id="traCuuForm">
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="loai_vb_display">Loại văn bản</label>
+                            <div class="custom-select" role="combobox" aria-expanded="false">
+                                <input type="hidden" name="loai_vb" id="loai_vb_value">
+                                <div class="select-display" id="loai_vb_display" tabindex="0">
+                                    <span id="loai_vb_text">Chọn loại văn bản</span>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="select-dropdown">
+                                    <input 
+                                        type="text"
+                                        class="search-select"
+                                        placeholder="Tìm kiếm loại văn bản..."
+                                        autocomplete="off"
+                                    >
+                                    <div class="option" data-value="">Tất cả</div>
+                                    <div class="option" data-value="luat">Luật</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="loai_lv_display">Lĩnh vực</label>
+                            <div class="custom-select" role="combobox" aria-expanded="false">
+                                <input type="hidden" name="loai_lv" id="loai_lv_value">
+                                <div class="select-display" id="loai_lv_display" tabindex="0">
+                                    <span id="loai_lv_text">Chọn lĩnh vực</span>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="select-dropdown">
+                                    <input 
+                                        type="text"
+                                        class="search-select"
+                                        placeholder="Tìm kiếm loại văn bản..."
+                                        autocomplete="off"
+                                    >
+                                    <div class="option" data-value="">Tất cả</div>
+                                    <div class="option" data-value="hanh_chinh">Hành chính</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="coQuan_display">Cơ quan ban hành</label>
+                            <div class="custom-select" role="combobox" aria-expanded="false">
+                                <input type="hidden" name="coQuan" id="coQuan_value">
+                                <div class="select-display" id="coQuan_display" tabindex="0">
+                                    <span id="coQuan_text">Chọn cơ quan</span>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="select-dropdown">
+                                    <input 
+                                        type="text"
+                                        class="search-select"
+                                        placeholder="Tìm kiếm loại văn bản..."
+                                        autocomplete="off"
+                                    >
+                                    <div class="option" data-value="">Tất cả</div>
+                                    <div class="option" data-value="Bo_Congan">Bộ Công an</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="namBanhanh_display">Năm ban hành</label>
+                            <div class="custom-select" role="combobox" aria-expanded="false">
+                                <input type="hidden" name="namBanhanh" id="namBanhanh_value">
+                                <div class="select-display" id="namBanhanh_display" tabindex="0">
+                                    <span id="namBanhanh_text">Chọn năm ban hành</span>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="select-dropdown">
+                                    <input 
+                                        type="text"
+                                        class="search-select"
+                                        placeholder="Tìm kiếm loại văn bản..."
+                                        autocomplete="off"
+                                    >
+                                    <div class="option" data-value="">Tất cả</div>
+                                    <div class="option" data-value="2026">2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="tuKhoa">Từ khóa</label>
+                            <input 
+                                type="text" 
+                                id="tuKhoa"
+                                name="tu_khoa"
+                                placeholder="Nhập số hiệu, tên văn bản..."
+                                autocomplete="off"
+                            >
+                        </div>
+                        <div class="form-col">
+                            <label for="limit">Số lượng kết quả</label>
+                            <input 
+                                type="number" 
+                                id="limit"
+                                name="limit"
+                                value="50"
+                                min="0"
+                                max="200"
+                                step="10"
+                            >
+                        </div>
+                    </div>
+                    <div class="form-col">
+                            <button type="submit" class="btn-search">
+                                Tìm kiếm
+                            </button>
+                    </div>
+                </form>
+                <div id="result" class="result-box">
+                    <div class="result-header">
+                        <div class="result-count">Chưa có dữ liệu.</div>
+                        <div class="result-actions"></div>
+                    </div>
+                    <div class="result-loading" style="display: none;">
+                        Đang tải dữ liệu...
+                    </div>
+                    <div class="result-empty" style="display: none;">
+                        Không tìm thấy văn bản phù hợp.
+                    </div>
+                    <div id="tableArea" class="table-wrapper"></div>
+                    <div class="pagination" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-container-banner">
+                <img src="../../favicon.ico" alt="logo" class="header-banner-logo">
+                <div class="footer-container-name">
+                    <h1>Cổng thông tin điện tử về phòng chống ma túy</h1>
+                    <p>Thực hiện pháp luật về phòng, chống ma túy tại địa bàn Thành phố Hồ Chí Minh</p>
+                </div>
+            </div>
+            <p>&copy;<span id="currentYear"></span>DTSVNCKH2025-2026. Bảo lưu mọi quyền</p>
+        </div>
+        <div class="footer-back-to-top">
+            <a href="../../index.html" aria-label="Quay lại đầu trang">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebar = document.getElementById("sidebar");
+            const menuToggle = document.getElementById("menuToggle");
+            const sidebarClose = document.getElementById("sidebarClose");
+            const overlay = document.getElementById("sidebarOverlay");
+            const dropdowns = document.querySelectorAll(".sidebar-dropdown");
+
+            function openSidebar() {
+                sidebar.classList.add("active");
+                overlay.classList.add("active");
+                sidebar.setAttribute("aria-hidden", "false");
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeSidebar() {
+                sidebar.classList.remove("active");
+                overlay.classList.remove("active");
+                sidebar.setAttribute("aria-hidden", "true");
+                document.body.style.overflow = "";
+            }
+            menuToggle.addEventListener("click", openSidebar);
+            sidebarClose.addEventListener("click", closeSidebar);
+            overlay.addEventListener("click", closeSidebar);
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") {
+                    closeSidebar();
+                }
+            });
+
+            dropdowns.forEach(drop => {
+                const trigger = drop.querySelector("span");
+                trigger.addEventListener("click", function () {
+                    drop.classList.toggle("open");
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const yearElement = document.getElementById("currentYear");
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+
+            const backToTopContainer = document.querySelector(".footer-back-to-top");
+            const backToTopBtn = document.querySelector(".footer-back-to-top a");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 300) {
+                    backToTopContainer.classList.add("show");
+                } else {
+                    backToTopContainer.classList.remove("show");
+                }
+            });
+            backToTopBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const customSelects = document.querySelectorAll(".custom-select");
+
+            customSelects.forEach(select => {
+                const display = select.querySelector(".select-display");
+                const dropdown = select.querySelector(".select-dropdown");
+                const options = select.querySelectorAll(".option");
+                const searchInput = select.querySelector(".search-select");
+                const hiddenInput = select.querySelector("input[type='hidden']");
+                const textSpan = display.querySelector("span");
+
+                display.addEventListener("click", function (e) {
+                    e.stopPropagation();
+
+                    document.querySelectorAll(".custom-select").forEach(item => {
+                        if (item !== select) item.classList.remove("active");
+                    });
+
+                    select.classList.toggle("active");
+                });
+
+                options.forEach(option => {
+                    option.addEventListener("click", function () {
+                        hiddenInput.value = this.dataset.value;
+                        textSpan.textContent = this.textContent;
+                        select.classList.remove("active");
+                    });
+                });
+
+                if (searchInput) {
+                    searchInput.addEventListener("input", function () {
+                        const keyword = this.value.toLowerCase();
+
+                        options.forEach(option => {
+                            const text = option.textContent.toLowerCase();
+                            option.style.display = text.includes(keyword) ? "block" : "none";
+                        });
+                    });
+                }
+            });
+
+            document.addEventListener("click", function () {
+                document.querySelectorAll(".custom-select").forEach(select => {
+                    select.classList.remove("active");
+                });
+            });
+
+            const fakeData = [
+                {
+                    so_hieu: "01/2026/QH15",
+                    ten_vb: "Luật Thanh tra",
+                    loai_vb: "luat",
+                    loai_lv: "hanh_chinh",
+                    coQuan: "Bo_Congan",
+                    coQuan_text: "Bộ Công an",
+                    namBanhanh: "2026"
+                },
+                {
+                    so_hieu: "99/2025/NĐ-CP",
+                    ten_vb: "Nghị định xử phạt hành chính",
+                    loai_vb: "luat",
+                    loai_lv: "hanh_chinh",
+                    coQuan: "Bo_Congan",
+                    coQuan_text: "Bộ Công an",
+                    namBanhanh: "2025"
+                }
+            ];
+
+            const form = document.getElementById("traCuuForm");
+            const resultCount = document.querySelector(".result-count");
+            const loadingBox = document.querySelector(".result-loading");
+            const emptyBox = document.querySelector(".result-empty");
+            const tableArea = document.getElementById("tableArea");
+            const pagination = document.querySelector(".pagination");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                loadingBox.style.display = "block";
+                emptyBox.style.display = "none";
+                tableArea.innerHTML = "";
+                pagination.style.display = "none";
+                resultCount.textContent = "Đang xử lý...";
+
+                setTimeout(() => {
+
+                    const formData = new FormData(form);
+
+                    const filters = {
+                        loai_vb: formData.get("loai_vb"),
+                        loai_lv: formData.get("loai_lv"),
+                        coQuan: formData.get("coQuan"),
+                        namBanhanh: formData.get("namBanhanh"),
+                        tu_khoa: formData.get("tu_khoa")?.toLowerCase() || ""
+                    };
+
+                    let results = fakeData.filter(item => {
+
+                        if (filters.loai_vb && item.loai_vb !== filters.loai_vb) return false;
+                        if (filters.loai_lv && item.loai_lv !== filters.loai_lv) return false;
+                        if (filters.coQuan && item.coQuan !== filters.coQuan) return false;
+                        if (filters.namBanhanh && item.namBanhanh !== filters.namBanhanh) return false;
+
+                        if (filters.tu_khoa) {
+                            const match =
+                                item.ten_vb.toLowerCase().includes(filters.tu_khoa) ||
+                                item.so_hieu.toLowerCase().includes(filters.tu_khoa);
+
+                            if (!match) return false;
+                        }
+
+                        return true;
+                    });
+
+                    const limit = parseInt(formData.get("limit")) || 50;
+                    results = results.slice(0, limit);
+
+                    loadingBox.style.display = "none";
+
+                    if (results.length === 0) {
+                        resultCount.textContent = "Không tìm thấy kết quả.";
+                        emptyBox.style.display = "block";
+                        return;
+                    }
+
+                    resultCount.textContent = `Tìm thấy ${results.length} văn bản`;
+
+                    let html = `
+                        <table width="100%" border="1" cellpadding="8">
+                            <tr>
+                                <th>Số hiệu</th>
+                                <th>Tên văn bản</th>
+                                <th>Cơ quan ban hành</th>
+                                <th>Năm ban hành</th>
+                            </tr>
+                    `;
+
+                    results.forEach(item => {
+                        html += `
+                            <tr>
+                                <td>${item.so_hieu}</td>
+                                <td>${item.ten_vb}</td>
+                                <td>${item.coQuan_text}</td>
+                                <td>${item.namBanhanh}</td>
+                            </tr>
+                        `;
+                    });
+
+                    html += "</table>";
+
+                    tableArea.innerHTML = html;
+
+                }, 500);
+            });
+
+        });
+    </script>
+</body>
+</html>

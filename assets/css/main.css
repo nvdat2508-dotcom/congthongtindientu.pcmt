@@ -389,7 +389,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
     flex-wrap: wrap;
 }
 
@@ -457,19 +457,6 @@ body {
     justify-content: center;
 }
 
-.footer-back-to-top a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: radial-gradient(circle at center, #f1f1f1 0%, #fff6a7 100%);
-    color: #c20a0a;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
 .footer-back-to-top a:hover {
     background: #c20a0a;
     color: #ffffff;
@@ -485,7 +472,9 @@ body {
 
 /* TO GIAC PHAN ANH */
 .togiacphananh-container-banner {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     padding: 5px;
     background: #c20a0a;
     border-radius: 10px;
@@ -771,6 +760,7 @@ button {
 /* CHUC NANG NHIEM VU */
 .chucnangnhiemvu-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -855,7 +845,8 @@ button {
 .cocautochuc-container,
 .lichsuhinhthanh-container,
 .sodocongthongtin-container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -925,7 +916,8 @@ button {
 .tintuctrongnuoc-container,
 .tintucquocte-container,
 .nghiencuutraodoi-container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1273,7 +1265,9 @@ button {
 
 /* TRA CUU VAN BAN PHAP LUAT */
 .tracuu-container-banner {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     padding: 5px;
     background: #c20a0a;
     border-radius: 10px;

@@ -500,6 +500,15 @@ body {
     padding: 5px;
     background: #c20a0a;
 }
+
+
+.banner-footer {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
 /* HOME */
 
 /* GIOI THIEU */
@@ -570,15 +579,6 @@ body {
     font-size: 16px;
     color: #444;
     text-align: justify;
-}
-
-.chucnangnhiemvu-banner {
-    width: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    display: none;
-    margin: 0;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* Co cau to chuc */
@@ -982,8 +982,9 @@ body {
 
 .gallery-list img {
     width: 100%;
-    height: 180px;
+    height: 100%;
     object-fit: cover;
+    object-position: left center;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
@@ -996,7 +997,7 @@ body {
     gap: 10px;
     background: #fff;
     padding: 0;
-    height: calc(100vh - 100px);
+    height: calc(120vh - 100px);
 }
 
 .laws-layout,

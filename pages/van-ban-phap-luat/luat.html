@@ -9,6 +9,7 @@
     <title>LUẬT</title>
     <link rel="icon" type="image/x-icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -143,41 +144,134 @@
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <main class="main-content" id="main">
-        <div class="cocautochuc-container">
-            <div class="error-container">
-                <div class="error-code">Thông báo</div>
-                <h1 class="error-title">Trang đang cập nhật thông tin</h1>
-                <p class="error-description">
-                    Nội dung của trang này hiện đang được rà soát, cập nhật và hoàn thiện theo kế hoạch công tác định kỳ của cơ quan quản lý.
-                    Quá trình chỉnh sửa, bổ sung được thực hiện nhằm bảo đảm tính chính xác, đầy đủ, thống nhất về nội dung,
-                    đồng thời phù hợp với các quy định pháp luật hiện hành và yêu cầu thực tiễn trong công tác phòng, chống ma túy.
-                </p>
-
-                <p class="error-description">
-                    Trong thời gian cập nhật, một số thông tin, văn bản quy phạm pháp luật, dữ liệu chuyên đề hoặc tài liệu hướng dẫn
-                    có thể chưa được hiển thị đầy đủ hoặc đang trong quá trình hiệu chỉnh kỹ thuật.
-                    Cơ quan quản lý đang khẩn trương phối hợp với các đơn vị chức năng để kiểm tra, chuẩn hóa và hoàn thiện nội dung
-                    trước khi chính thức công bố trên hệ thống.
-                </p>
-
-                <p class="error-description">
-                    Việc tạm thời gián đoạn hiển thị nội dung là nhằm bảo đảm chất lượng thông tin cung cấp đến tổ chức, cá nhân,
-                    tránh sai sót, nhầm lẫn hoặc thông tin chưa được kiểm chứng.
-                    Chúng tôi cam kết cập nhật lại nội dung trong thời gian sớm nhất theo đúng quy định và quy trình quản lý thông tin điện tử.
-                </p>
-
-                <p class="error-description">
-                    Vui lòng quay lại sau hoặc truy cập Trang chủ để tiếp tục tra cứu các chuyên mục khác.
-                    Trường hợp cần hỗ trợ hoặc cung cấp thông tin khẩn cấp, đề nghị liên hệ cơ quan chức năng theo thông tin được đăng tải trên hệ thống.
-                    Trân trọng cảm ơn sự quan tâm, theo dõi và hợp tác của Quý cơ quan, tổ chức và cá nhân.
-                </p>
-                <div class="error-actions">
-                    <a href="../../index.html" class="btn-home">Quay về trang chủ</a>
-                </div>
+        <div class="vanbanphapluat-container">
+            <div class="laws-layout">
+                <section class="laws-content">
+                    <h2>Hệ thống văn bản pháp luật</h2>
+                    <article class="featured">
+                        <img src="../../assets/images/picture.jpg" alt="Ảnh bài viết nổi bật">
+                        <div class="laws-text">
+                            <h3>Tiêu đề bài viết nổi bật</h3>
+                            <p>
+                                Nội dung mô tả ngắn khoảng 2–3 dòng. Đủ để hiểu vấn đề,
+                                nhưng không dài tới mức biến trang chủ thành tiểu thuyết.
+                            </p>
+                            <span class="date post-date" data-date="2026-02-27"></span>
+                        </div>
+                    </article>
+                </section>
+                <section class="laws-content">
+                    <h2>Danh sách văn bản Luật</h2>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Tìm theo tên văn bản hoặc số hiệu...">
+                    </div>
+                    <table class="vanban-table" id="lawTable">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên văn bản</th>
+                                <th>Số hiệu</th>
+                                <th>Ngày ban hành</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Luật Phòng, chống ma túy</td>
+                                <td>73/2021/QH14</td>
+                                <td>30/03/2021</td>
+                                <td>
+                                    <a href="../../assets/files/luat-phong-chong-ma-tuy.pdf" class="download-btn" download>
+                                        Download
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Luật Thanh tra</td>
+                                <td>11/2022/QH15</td>
+                                <td>14/11/2022</td>
+                                <td>
+                                    <a href="../../assets/files/luat-thanh-tra.pdf" class="download-btn" download>
+                                        Download
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Luật Thanh tra</td>
+                                <td>11/2022/QH15</td>
+                                <td>14/11/2022</td>
+                                <td>
+                                    <a href="../../assets/files/luat-thanh-tra.pdf" class="download-btn" download>
+                                        Download
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </div>
+            <aside class="laws-sidebar">
+                <div class="laws-sidebar-container">
+                    <h3>THÔNG BÁO</h3>
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                            <div class="calendar">
+                                <div class="calendar-header">
+                                    <button id="prevMonth">&#10094;</button>
+                                    <h2 id="monthYear"></h2>
+                                    <button id="nextMonth">&#10095;</button>
+                                </div>
+                                <div class="calendar-weekdays">
+                                    <div>CN</div>
+                                    <div>T2</div>
+                                    <div>T3</div>
+                                    <div>T4</div>
+                                    <div>T5</div>
+                                    <div>T6</div>
+                                    <div>T7</div>
+                                </div>
+                                <div class="calendar-days" id="calendarDays"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="laws-sidebar-container">
+                    <h3>HOẠT ĐỘNG NỔI BẬT</h3>
+                    <ul class="gallery-list">
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/picture.jpg" alt="Ảnh 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/picture.jpg" alt="Ảnh 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/picture.jpg" alt="Ảnh 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/picture.jpg" alt="Ảnh 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/picture.jpg" alt="Ảnh 1">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
         </div>
     </main>
-    <img src="" alt="banner" class="chucnangnhiemvu-banner">
     <footer class="footer" id="footer">
         <div class="footer-container">
             <div class="footer-container-banner">
@@ -197,6 +291,7 @@
     </footer>
     <script>   
         document.addEventListener("DOMContentLoaded", function () {
+
             const sidebar = document.getElementById("sidebar");
             const menuToggle = document.getElementById("menuToggle");
             const sidebarClose = document.getElementById("sidebarClose");
@@ -204,6 +299,7 @@
             const dropdowns = document.querySelectorAll(".sidebar-dropdown");
 
             function openSidebar() {
+                if (!sidebar || !overlay) return;
                 sidebar.classList.add("active");
                 overlay.classList.add("active");
                 sidebar.setAttribute("aria-hidden", "false");
@@ -211,29 +307,28 @@
             }
 
             function closeSidebar() {
+                if (!sidebar || !overlay) return;
                 sidebar.classList.remove("active");
                 overlay.classList.remove("active");
                 sidebar.setAttribute("aria-hidden", "true");
                 document.body.style.overflow = "";
             }
-            menuToggle.addEventListener("click", openSidebar);
-            sidebarClose.addEventListener("click", closeSidebar);
-            overlay.addEventListener("click", closeSidebar);
+
+            if (menuToggle) menuToggle.addEventListener("click", openSidebar);
+            if (sidebarClose) sidebarClose.addEventListener("click", closeSidebar);
+            if (overlay) overlay.addEventListener("click", closeSidebar);
+
             document.addEventListener("keydown", function (e) {
-                if (e.key === "Escape") {
-                    closeSidebar();
-                }
+                if (e.key === "Escape") closeSidebar();
             });
 
             dropdowns.forEach(drop => {
                 const trigger = drop.querySelector("span");
+                if (!trigger) return;
                 trigger.addEventListener("click", function () {
                     drop.classList.toggle("open");
                 });
             });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
 
             const yearElement = document.getElementById("currentYear");
             if (yearElement) {
@@ -244,20 +339,122 @@
             const backToTopBtn = document.querySelector(".footer-back-to-top a");
 
             window.addEventListener("scroll", function () {
+                if (!backToTopContainer) return;
                 if (window.scrollY > 300) {
                     backToTopContainer.classList.add("show");
                 } else {
                     backToTopContainer.classList.remove("show");
                 }
             });
-            backToTopBtn.addEventListener("click", function (e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
+
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
                 });
+            }
+
+            const searchInput = document.getElementById("searchInput");
+            const rows = document.querySelectorAll("#lawTable tbody tr");
+
+            if (searchInput) {
+                searchInput.addEventListener("keyup", function () {
+                    const filter = this.value.toLowerCase();
+                    rows.forEach(row => {
+                        const text = row.textContent.toLowerCase();
+                        row.style.display = text.includes(filter) ? "" : "none";
+                    });
+                });
+            }
+
+            const postDates = document.querySelectorAll(".post-date");
+
+            postDates.forEach(el => {
+                const rawDate = el.getAttribute("data-date");
+                if (!rawDate) return;
+
+                const dateObj = new Date(rawDate);
+                if (isNaN(dateObj)) return;
+
+                const now = new Date();
+                const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+                const postDay = new Date(dateObj.getFullYear(), dateObj.getMonth(), dateObj.getDate());
+
+                const diffDays = Math.floor((today - postDay) / (1000 * 60 * 60 * 24));
+
+                let output;
+
+                if (diffDays === 0) {
+                    output = "Hôm nay";
+                } else if (diffDays === 1) {
+                    output = "Hôm qua";
+                } else if (diffDays <= 7) {
+                    output = `${diffDays} ngày trước`;
+                } else {
+                    output = dateObj.toLocaleDateString("vi-VN");
+                }
+
+                el.textContent = output;
             });
 
+            const monthYear = document.getElementById("monthYear");
+            const calendarDays = document.getElementById("calendarDays");
+            const prevBtn = document.getElementById("prevMonth");
+            const nextBtn = document.getElementById("nextMonth");
+
+            if (monthYear && calendarDays && prevBtn && nextBtn) {
+
+                let currentDate = new Date();
+
+                function renderCalendar(date) {
+                    const year = date.getFullYear();
+                    const month = date.getMonth();
+
+                    const firstDay = new Date(year, month, 1).getDay();
+                    const lastDate = new Date(year, month + 1, 0).getDate();
+
+                    monthYear.textContent = `Tháng ${month + 1} / ${year}`;
+                    calendarDays.innerHTML = "";
+
+                    for (let i = 0; i < firstDay; i++) {
+                        calendarDays.appendChild(document.createElement("div"));
+                    }
+
+                    const today = new Date();
+
+                    for (let day = 1; day <= lastDate; day++) {
+                        const dayDiv = document.createElement("div");
+                        dayDiv.textContent = day;
+
+                        if (
+                            day === today.getDate() &&
+                            month === today.getMonth() &&
+                            year === today.getFullYear()
+                        ) {
+                            dayDiv.classList.add("today");
+                        }
+
+                        calendarDays.appendChild(dayDiv);
+                    }
+                }
+
+                prevBtn.addEventListener("click", function () {
+                    currentDate.setMonth(currentDate.getMonth() - 1);
+                    renderCalendar(currentDate);
+                });
+
+                nextBtn.addEventListener("click", function () {
+                    currentDate.setMonth(currentDate.getMonth() + 1);
+                    renderCalendar(currentDate);
+                });
+
+                renderCalendar(currentDate);
+            }
+
+            
         });
     </script>
 </body>

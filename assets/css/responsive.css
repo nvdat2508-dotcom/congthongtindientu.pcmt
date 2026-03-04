@@ -139,8 +139,24 @@ body {
         bottom: 85px;  
     }
 
-    /* CHUC NANG NHIEM VU */
-    .chucnangnhiemvu-container {
+    /* CONTAINER */
+    .home-container,
+    .chucnangnhiemvu-container,
+    .cocautochuc-container,
+    .lichsuhinhthanh-container,
+    .sodocongthongtin-container,
+    .hoatdongdiaphuong-container,
+    .tintucquocte-container,
+    .tintuctrongnuoc-container,
+    .kienthuccoban-container,
+    .kynangphongngua-container,
+    .nhandienmatuymoi-container,
+    .tachaimatuy-container,
+    .tailieutruyenthong-container,
+    .vanbanphapluat-container,
+    .tracuu-container-banner,
+    .nghiencuutraodoi-container,
+    .togiacphananh-container-banner {
         padding: 0 10px;
     }
 }

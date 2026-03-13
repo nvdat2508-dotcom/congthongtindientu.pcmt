@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -143,8 +144,33 @@
         </div>
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    <main class="main-content" id="main">
+    <main class="main-content" id="home-page">
         <div class="home-container">
+            
+            <div class="top-info-bar">
+                <div class="time-box">
+                    <span id="clock"></span>
+                    <span class="time-divider">|</span>
+                    <span id="date"></span>
+                </div>
+                <div class="marquee-box">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <span>
+                                Cổng thông tin phòng chống ma túy – Chung tay xây dựng cộng đồng không ma túy
+                            </span>
+                            <span>
+                                Tuyên truyền tháng hành động phòng chống ma túy
+                            </span>
+                            <span>
+                                Phát hiện và tố giác tội phạm ma túy là trách nhiệm của mỗi công dân
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
     </main>
     <img src="assets/images/Bannerfooter.png" alt="banner" class="banner-footer">
@@ -166,67 +192,117 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", () => {
+
             const sidebar = document.getElementById("sidebar");
             const menuToggle = document.getElementById("menuToggle");
             const sidebarClose = document.getElementById("sidebarClose");
             const overlay = document.getElementById("sidebarOverlay");
             const dropdowns = document.querySelectorAll(".sidebar-dropdown");
 
-            function openSidebar() {
+            const yearElement = document.getElementById("currentYear");
+            const backToTopContainer = document.querySelector(".footer-back-to-top");
+            const backToTopBtn = document.querySelector(".footer-back-to-top a");
+
+            const clock = document.getElementById("clock");
+            const date = document.getElementById("date");
+
+            /* SIDEBAR */
+            const openSidebar = () => {
+                if (!sidebar || !overlay) return;
+
                 sidebar.classList.add("active");
                 overlay.classList.add("active");
                 sidebar.setAttribute("aria-hidden", "false");
                 document.body.style.overflow = "hidden";
-            }
+            };
 
-            function closeSidebar() {
+            const closeSidebar = () => {
+                if (!sidebar || !overlay) return;
+
                 sidebar.classList.remove("active");
                 overlay.classList.remove("active");
                 sidebar.setAttribute("aria-hidden", "true");
                 document.body.style.overflow = "";
-            }
-            menuToggle.addEventListener("click", openSidebar);
-            sidebarClose.addEventListener("click", closeSidebar);
-            overlay.addEventListener("click", closeSidebar);
-            document.addEventListener("keydown", function (e) {
-                if (e.key === "Escape") {
+            };
+
+            menuToggle?.addEventListener("click", openSidebar);
+            sidebarClose?.addEventListener("click", closeSidebar);
+            overlay?.addEventListener("click", closeSidebar);
+
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape" && sidebar?.classList.contains("active")) {
                     closeSidebar();
                 }
             });
 
+            /* DROPDOWN MENU */
             dropdowns.forEach(drop => {
                 const trigger = drop.querySelector("span");
-                trigger.addEventListener("click", function () {
-                    drop.classList.toggle("open");
+
+                if (!trigger) return;
+
+                trigger.addEventListener("click", () => {
+                    const isOpen = drop.classList.contains("open");
+
+                    dropdowns.forEach(d => d.classList.remove("open"));
+
+                    if (!isOpen) {
+                        drop.classList.add("open");
+                    }
                 });
             });
-        });
 
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const yearElement = document.getElementById("currentYear");
+            /* YEAR FOOTER */
             if (yearElement) {
                 yearElement.textContent = new Date().getFullYear();
             }
 
-            const backToTopContainer = document.querySelector(".footer-back-to-top");
-            const backToTopBtn = document.querySelector(".footer-back-to-top a");
+            /* BACK TO TOP */
+            if (backToTopContainer && backToTopBtn) {
 
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 300) {
-                    backToTopContainer.classList.add("show");
-                } else {
-                    backToTopContainer.classList.remove("show");
-                }
-            });
-            backToTopBtn.addEventListener("click", function (e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 300) {
+                        backToTopContainer.classList.add("show");
+                    } else {
+                        backToTopContainer.classList.remove("show");
+                    }
                 });
-            });
+
+                backToTopBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                });
+            }
+
+            /* CLOCK + DATE */
+            function updateTime() {
+
+                const now = new Date();
+
+                const time = now.toLocaleTimeString("vi-VN", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false
+                });
+
+                const today = now.toLocaleDateString("vi-VN", {
+                    weekday: "long",
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric"
+                });
+
+                if (clock) clock.textContent = time;
+                if (date) date.textContent = today;
+            }
+
+            updateTime();
+            setInterval(updateTime, 60000);
 
         });
     </script>

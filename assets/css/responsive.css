@@ -49,7 +49,6 @@ body {
         font-size: 7px;
     }
 
-    /* NAVBAR */
     .navbar-container-menu > li > a {
         display: none;
         padding: 5px 10px;
@@ -64,7 +63,6 @@ body {
         cursor: pointer;
     }
 
-    /* SIDEBAR */
     .sidebar {
         left: -300px;
         width: 300px;
@@ -94,7 +92,6 @@ body {
         font-size: 20px;
     }
 
-    /* FOOTER */
     .footer {
         padding: 5px 10px;
         justify-content: center;

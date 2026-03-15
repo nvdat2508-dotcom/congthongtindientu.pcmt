@@ -471,34 +471,6 @@ body {
     padding: 0;
 }
 
-.chucnangnhiemvu-container,
-.cocautochuc-container,
-.lichsuhinhthanh-container,
-.sodocongthongtin-container,
-.hoatdongdiaphuong-container,
-.tintucquocte-container,
-.tintuctrongnuoc-container,
-.kienthuccoban-container,
-.kynangphongngua-container,
-.nhandienmatuymoi-container,
-.tachaimatuy-container,
-.tailieutruyenthong-container,
-.vanbanphapluat-container,
-.tracuu-container-banner,
-.nghiencuutraodoi-container,
-.togiacphananh-container-banner {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.tracuu-container-banner,
-.togiacphananh-container-banner {
-    padding: 5px;
-    background: #c20a0a;
-}
-
 .banner-footer {
     width: 100%;
     max-height: 320px;
@@ -524,7 +496,6 @@ body {
     align-items:center;
     background: #f0f0f0;
     color:#c20a0a;
-    font-family: Roboto, Arial, sans-serif;
     overflow:hidden;
 }
 

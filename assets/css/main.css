@@ -1432,9 +1432,8 @@ body {
     width: 100%;
     max-width: 1200px;
     background: #fff;
-    padding: 5px;
+    padding: 0;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    border: 1px solid #f1f1f1;
 }
 
 .chucnangnhiemvu-title {
@@ -1457,7 +1456,7 @@ body {
     border-radius: 10px;
     border: 2px solid #dbe3f0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .content-box p {
@@ -1491,7 +1490,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #b30000;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px 10px;
 }
 
 .task-item ul {
@@ -1507,11 +1506,10 @@ body {
 
 /* Co cau to chuc */
 /* Lich su hinh thanh */
-/* So do cong thong tin */
 .error-container {
     margin: 0 auto;
     background: #ffffff;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border-radius: 10px;
     text-align: center;
     border: 2px solid #dbe3f0;
@@ -1568,6 +1566,168 @@ body {
     color: #c20a0a;
     transform: translateY(-2px);
 }
+
+/* So do cong thong tin */
+.sitemap-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background: #f9fafc;
+    border: 1px solid #e5e7eb;
+}
+
+.sitemap-container h3 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #140e98, #9333ea);
+    background-clip: text;            
+    -webkit-background-clip: text;      
+    color: transparent;            
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.sitemap-container h3::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+}
+
+.tree-sitemap > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.tree-sitemap > ul > li {
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.tree-sitemap > ul > li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.tree-sitemap > ul > li:hover::before {
+    opacity: 0.1;
+}
+
+.tree-sitemap > ul > li:hover {
+    transform: scale(1.01);
+    filter: brightness(1.01);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.tree-sitemap > ul > li:nth-child(1) {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+
+.tree-sitemap > ul > li:nth-child(2) {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+.tree-sitemap > ul > li:nth-child(3) {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.tree-sitemap > ul > li:nth-child(4) {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.tree-sitemap > ul > li:nth-child(5) {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.tree-sitemap > ul > li:nth-child(6) {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.tree-sitemap span {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.tree-sitemap li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tree-sitemap li ul li {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    margin-bottom: 5px;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+.tree-sitemap li ul li:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateX(5px);
+}
+
+.tree-sitemap > ul > li:first-child {
+    grid-column: span 3;
+    background: linear-gradient(135deg, #d91212, #f97316);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    box-shadow: 0 15px 40px rgba(249,115,22,0.4);
+}
+
+.tree-sitemap > ul > li:first-child span {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TIN TUC - SU KIEN */
 .news-layout {

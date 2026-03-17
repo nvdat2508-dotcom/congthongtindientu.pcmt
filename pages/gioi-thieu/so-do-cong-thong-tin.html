@@ -143,37 +143,67 @@
         </div>
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    <main class="main-content" id="main">
-        <div class="sodocongthongtin-container">
-            <div class="error-container">
-                <div class="error-code">Thông báo</div>
-                <h1 class="error-title">Trang đang cập nhật thông tin</h1>
-                <p class="error-description">
-                    Nội dung của trang này hiện đang được rà soát, cập nhật và hoàn thiện theo kế hoạch công tác định kỳ của cơ quan quản lý.
-                    Quá trình chỉnh sửa, bổ sung được thực hiện nhằm bảo đảm tính chính xác, đầy đủ, thống nhất về nội dung,
-                    đồng thời phù hợp với các quy định pháp luật hiện hành và yêu cầu thực tiễn trong công tác phòng, chống ma túy.
-                </p>
+    <main class="main-content-about" id="main">
+        <div class="gioithieu-container">
+            <div class="sitemap-container">
+                <h3>Sơ đồ cổng thông tin</h3>
+                <div class="tree-sitemap">
+                    <ul>
+                        <li>
+                            <span>Trang chủ</span>
+                        </li>
 
-                <p class="error-description">
-                    Trong thời gian cập nhật, một số thông tin, văn bản quy phạm pháp luật, dữ liệu chuyên đề hoặc tài liệu hướng dẫn
-                    có thể chưa được hiển thị đầy đủ hoặc đang trong quá trình hiệu chỉnh kỹ thuật.
-                    Cơ quan quản lý đang khẩn trương phối hợp với các đơn vị chức năng để kiểm tra, chuẩn hóa và hoàn thiện nội dung
-                    trước khi chính thức công bố trên hệ thống.
-                </p>
+                        <li>
+                            <span>Giới thiệu</span>
+                            <ul>
+                                <li>Chức năng - nhiệm vụ</li>
+                                <li>Cơ cấu tổ chức</li>
+                                <li>Lịch sử hình thành</li>
+                                <li>Sơ đồ cổng thông tin</li>
+                            </ul>
+                        </li>
 
-                <p class="error-description">
-                    Việc tạm thời gián đoạn hiển thị nội dung là nhằm bảo đảm chất lượng thông tin cung cấp đến tổ chức, cá nhân,
-                    tránh sai sót, nhầm lẫn hoặc thông tin chưa được kiểm chứng.
-                    Chúng tôi cam kết cập nhật lại nội dung trong thời gian sớm nhất theo đúng quy định và quy trình quản lý thông tin điện tử.
-                </p>
+                        <li>
+                            <span>Tin tức - sự kiện</span>
+                            <ul>
+                                <li>Tin tức trong nước</li>
+                                <li>Tin tức quốc tế</li>
+                                <li>Hoạt động địa phương</li>
+                            </ul>
+                        </li>
 
-                <p class="error-description">
-                    Vui lòng quay lại sau hoặc truy cập Trang chủ để tiếp tục tra cứu các chuyên mục khác.
-                    Trường hợp cần hỗ trợ hoặc cung cấp thông tin khẩn cấp, đề nghị liên hệ cơ quan chức năng theo thông tin được đăng tải trên hệ thống.
-                    Trân trọng cảm ơn sự quan tâm, theo dõi và hợp tác của Quý cơ quan, tổ chức và cá nhân.
-                </p>
-                <div class="error-actions">
-                    <a href="../../index.html" class="btn-home">Quay về trang chủ</a>
+                        <li>
+                            <span>Văn bản pháp luật</span>
+                            <ul>
+                                <li>Luật</li>
+                                <li>Nghị định</li>
+                                <li>Thông tư</li>
+                                <li>Văn bản địa phương</li>
+                                <li>Văn bản chỉ đạo điều hành</li>
+                                <li>Văn bản quốc tế</li>
+                                <li>Tra cứu</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>Tuyên truyền - giáo dục</span>
+                            <ul>
+                                <li>Kiến thức cơ bản</li>
+                                <li>Kỹ năng phòng ngừa</li>
+                                <li>Nhận diện ma túy mới</li>
+                                <li>Tác hại ma túy</li>
+                                <li>Tài liệu truyền thông</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>Khác</span>
+                            <ul>
+                                <li>Nghiên cứu - trao đổi</li>
+                                <li>Tố giác - phản ánh</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -198,6 +228,7 @@
     </footer>
     <script>   
         document.addEventListener("DOMContentLoaded", function () {
+
             const sidebar = document.getElementById("sidebar");
             const menuToggle = document.getElementById("menuToggle");
             const sidebarClose = document.getElementById("sidebarClose");
@@ -217,9 +248,11 @@
                 sidebar.setAttribute("aria-hidden", "true");
                 document.body.style.overflow = "";
             }
-            menuToggle.addEventListener("click", openSidebar);
-            sidebarClose.addEventListener("click", closeSidebar);
-            overlay.addEventListener("click", closeSidebar);
+
+            if (menuToggle) menuToggle.addEventListener("click", openSidebar);
+            if (sidebarClose) sidebarClose.addEventListener("click", closeSidebar);
+            if (overlay) overlay.addEventListener("click", closeSidebar);
+
             document.addEventListener("keydown", function (e) {
                 if (e.key === "Escape") {
                     closeSidebar();
@@ -228,13 +261,12 @@
 
             dropdowns.forEach(drop => {
                 const trigger = drop.querySelector("span");
-                trigger.addEventListener("click", function () {
-                    drop.classList.toggle("open");
-                });
+                if (trigger) {
+                    trigger.addEventListener("click", function () {
+                        drop.classList.toggle("open");
+                    });
+                }
             });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
 
             const yearElement = document.getElementById("currentYear");
             if (yearElement) {
@@ -245,19 +277,24 @@
             const backToTopBtn = document.querySelector(".footer-back-to-top a");
 
             window.addEventListener("scroll", function () {
-                if (window.scrollY > 300) {
-                    backToTopContainer.classList.add("show");
-                } else {
-                    backToTopContainer.classList.remove("show");
+                if (backToTopContainer) {
+                    if (window.scrollY > 300) {
+                        backToTopContainer.classList.add("show");
+                    } else {
+                        backToTopContainer.classList.remove("show");
+                    }
                 }
             });
-            backToTopBtn.addEventListener("click", function (e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
+
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
                 });
-            });
+            }
 
         });
     </script>

@@ -375,7 +375,6 @@ body {
 
     .gioithieu-container {
         width: 100%;
-        padding: 5px;
     }
 
     .chucnangnhiemvu-title {
@@ -394,7 +393,7 @@ body {
 
     .chucnangnhiemvu-task-section {
         background: #ffffff;
-        padding: 10px;
+        padding: 5px;
         border-radius: 10px;
         border: 2px solid #dbe3f0;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -420,4 +419,48 @@ body {
     .task-item ul li {
         margin-bottom: 8px;
     }
+
+    /* GIOI THIEU - CHUA CO THONG TIN */
+    .error-container {
+        padding: 5px 15px;
+    }
+
+    .error-code {
+        padding: 10px 25px;
+    }
+
+    .error-title {
+        font-size: 16px;
+        color: #0b7c0b;
+    }
+
+    .error-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .error-actions {
+        margin-top: 15px;
+    }
+
+    /* GIOI THIEU - SO DO CONG */
+    .sitemap-container {
+        width: 100%;
+    }
+
+    .sitemap-container h3 {
+        font-size: 20px;
+    }
+
+    .tree-sitemap > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tree-sitemap > ul > li:first-child span {
+        font-size: 20px;
+    }
+
+    /* TIN TUC - SU KIEN */
+    
 }

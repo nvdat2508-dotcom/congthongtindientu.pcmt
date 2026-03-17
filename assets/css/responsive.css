@@ -367,4 +367,57 @@ body {
     .home-media-list p{
         font-weight: 400;
     }
+
+    /* GIỚI THIỆU - CNNV */
+    .main-content-about {
+        padding: 5px;
+    }
+
+    .gioithieu-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .chucnangnhiemvu-title {
+        font-size: 18px;
+        padding: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .content-box {
+        margin-bottom: 5px;
+    }
+
+    .content-box p:last-child {
+        margin-bottom: 0;
+    }
+
+    .chucnangnhiemvu-task-section {
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #dbe3f0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .task-item {
+        border-bottom: 1px dashed #ddd;
+    }
+
+    .task-item:last-child {
+        border-bottom: none;
+    }
+
+    .task-item h3 {
+        font-weight: 500;
+        margin: 5px 0 5px 5px;
+    }
+
+    .task-item ul {
+        padding-left: 23px;
+    }
+
+    .task-item ul li {
+        margin-bottom: 8px;
+    }
 }

@@ -143,8 +143,8 @@
         </div>
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    <main class="main-content" id="main">
-        <div class="chucnangnhiemvu-container">
+    <main class="main-content-about" id="main">
+        <div class="gioithieu-container">
             <div class="chucnangnhiemvu-title">Vị trí và chức năng</div>
             <div class="content-box">
                 <p>
@@ -172,7 +172,7 @@
             <div class="chucnangnhiemvu-title">Nhiệm vụ, quyền hạn</div>
             <div class="chucnangnhiemvu-task-section">
                 <div class="task-item">
-                    <h3>1. Công tác tuyên truyền, phổ biến pháp luật</h3>
+                    <h3>1. Tuyên truyền, phổ biến pháp luật</h3>
                     <ul>
                         <li>Cập nhật, đăng tải kịp thời các văn bản quy phạm pháp luật, nghị quyết, chỉ thị, chương trình, kế hoạch về phòng, chống ma túy.</li>
                         <li>Xây dựng và duy trì các chuyên trang, chuyên mục tuyên truyền theo từng chủ đề, từng giai đoạn cao điểm.</li>
@@ -244,6 +244,7 @@
     </footer>
     <script>   
         document.addEventListener("DOMContentLoaded", function () {
+
             const sidebar = document.getElementById("sidebar");
             const menuToggle = document.getElementById("menuToggle");
             const sidebarClose = document.getElementById("sidebarClose");
@@ -263,9 +264,11 @@
                 sidebar.setAttribute("aria-hidden", "true");
                 document.body.style.overflow = "";
             }
-            menuToggle.addEventListener("click", openSidebar);
-            sidebarClose.addEventListener("click", closeSidebar);
-            overlay.addEventListener("click", closeSidebar);
+
+            if (menuToggle) menuToggle.addEventListener("click", openSidebar);
+            if (sidebarClose) sidebarClose.addEventListener("click", closeSidebar);
+            if (overlay) overlay.addEventListener("click", closeSidebar);
+
             document.addEventListener("keydown", function (e) {
                 if (e.key === "Escape") {
                     closeSidebar();
@@ -274,13 +277,12 @@
 
             dropdowns.forEach(drop => {
                 const trigger = drop.querySelector("span");
-                trigger.addEventListener("click", function () {
-                    drop.classList.toggle("open");
-                });
+                if (trigger) {
+                    trigger.addEventListener("click", function () {
+                        drop.classList.toggle("open");
+                    });
+                }
             });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
 
             const yearElement = document.getElementById("currentYear");
             if (yearElement) {
@@ -291,19 +293,24 @@
             const backToTopBtn = document.querySelector(".footer-back-to-top a");
 
             window.addEventListener("scroll", function () {
-                if (window.scrollY > 300) {
-                    backToTopContainer.classList.add("show");
-                } else {
-                    backToTopContainer.classList.remove("show");
+                if (backToTopContainer) {
+                    if (window.scrollY > 300) {
+                        backToTopContainer.classList.add("show");
+                    } else {
+                        backToTopContainer.classList.remove("show");
+                    }
                 }
             });
-            backToTopBtn.addEventListener("click", function (e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
+
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
                 });
-            });
+            }
 
         });
     </script>

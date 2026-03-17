@@ -131,6 +131,7 @@ body {
     list-style: none;
     display: none;
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    z-index: 1000;
 }
 
 .dropdown-menu li a {
@@ -1319,7 +1320,7 @@ body {
 
 .faq-display{
     width:60%;
-    padding: 0px 15px;
+    padding: 0px 10px;
     font-size:14px;
     line-height:1.4;
     color:#333;
@@ -1327,6 +1328,7 @@ body {
     font-weight: 500;
     overflow-y:auto; 
     height:100%;
+    text-align: justify;
 }
 
 .faq-display p{
@@ -1420,14 +1422,29 @@ body {
 
 /* GIOI THIEU */
 /* Chuc nang nhiem vu */
+.main-content-about {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.gioithieu-container {
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border: 1px solid #f1f1f1;
+}
+
 .chucnangnhiemvu-title {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #c20a0a;
     background: linear-gradient(to right, #fff6e6, #ffe6cc);
-    padding: 10px;
-    margin: 0 0 15px 0;
+    padding: 5px;
+    margin: 0 0 5px 0;
     border-radius: 10px;
     border: 1px solid #f0c36d;
     position: relative;
@@ -1436,16 +1453,16 @@ body {
 
 .content-box {
     background: #ffffff;
-    padding: 10px 25px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid #dbe3f0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .content-box p {
     text-align: justify;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 16px;
     color: #333;
 }
@@ -1456,7 +1473,7 @@ body {
 
 .chucnangnhiemvu-task-section {
     background: #ffffff;
-    padding: 10px 25px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid #dbe3f0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
